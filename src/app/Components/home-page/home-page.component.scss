@@ -1,62 +1,6 @@
-:host { 
-    display: grid;
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 20% 70% 10%;
-    background-color: pink; 
-    width: 100%;
-    height: 100%;
-}
-
-:host > app-menu > ul {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.box1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    background-color: beige;
- }
-
-.box2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: center;
- }
-
- .box3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-left: 70%;
-    margin-top: 1%;
- }
-
- .box4 {
-    grid-column: 2/4;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
- }
-
-.box5 {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    background-color: grey;
- }
-
- .logo {
-     width: 60%;
-     height: 100%;
- }
 
 
-.menu-home {
-    justify-items: center;
- }
 
-.account-access {
-     margin: 5px;
- }
 
  
 
