@@ -38,17 +38,23 @@
     justify-self: center;
  }
 
- .box5 {
+.box5 {
     grid-column: 1/4;
     grid-row: 3/4;
     background-color: grey;
  }
 
- .menu-home {
+ .logo {
+     width: 60%;
+     height: 100%;
+ }
+
+
+.menu-home {
     justify-items: center;
  }
 
- .account-access {
+.account-access {
      margin: 5px;
  }
 

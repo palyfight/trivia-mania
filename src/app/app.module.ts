@@ -11,6 +11,8 @@ import { MenuComponent } from './menu/menu.component';
 import {RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {path: 
@@ -26,7 +28,9 @@ const appRoutes: Routes = [
     HomePageComponent,
     LoginComponent,
     RegistrationComponent,
-    MenuComponent
+    MenuComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
