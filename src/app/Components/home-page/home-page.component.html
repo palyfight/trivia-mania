@@ -1,18 +1,32 @@
-<app-nav></app-nav>
 
-<header class="masthead text-center text-red">
-    <div class="masthead-content">
-      <div class="container">
-        <h1 class="masthead-heading mb-0">TRIVIA MANIA</h1>
-        <h2 class="masthead-subheading mb-0">kieeeeeeeeeeeeeeeeeeeeeeet</h2>
-        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Play Game</a>
-      </div>
-    </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
-  </header>
+<mat-grid-list cols="3" rowHeight="3:1" gutterSize="0px">
+<!--Espace du haut : header + navbar -->
+  <mat-grid-tile colspan="3">
+    <mat-toolbar>
+      <span><h3> {{title}} </h3></span>
+      <span><a mat-raised-button color="primary">Log In</a></span>
+      <span><a mat-raised-button color="primary">Register</a></span>
+    </mat-toolbar>
+  </mat-grid-tile>
+<!--Espace milieu-gauche: menu -->
+  <mat-grid-tile rowspan="3">
+
+  </mat-grid-tile>
+<!--Espace milieu-droit1 : Bouton play-->
+  <mat-grid-tile colspan="2" rowspan="2">
+    <button class="play-btn" mat-fab color="accent" fullWidth="true">PLAY GAME</button>
+  </mat-grid-tile>
+<!--Espace milieu-droit2 : menu -->
+  <mat-grid-tile colspan="2">
+    <app-menu></app-menu>
+  </mat-grid-tile>
+<!--Espace milieu-droit2 : menu -->
+  <mat-grid-tile class="bot-tile" colspan="3">
+    <mat-grid-tile-footer class="footer"></mat-grid-tile-footer>
+  </mat-grid-tile>
+
+</mat-grid-list>
+
 
 
 

@@ -1,6 +1,37 @@
+:host {
+    height: 100%; 
+    width: 100%; 
+}
 
+mat-grid-tile {
+    background-color: lightblue;
+}
 
+mat-toolbar {
+    justify-content: end;
+}
 
+mat-toolbar a {
+    margin-left: 5px; 
+    
+}
 
+.play-btn {
+    color:black;
+    height: 50%;
+    width: 50%;
+}
+
+.menu {
+    color: white; 
+}
+
+.bot-tile {
+    height: 30px;
+}
+
+.footer {
+    height: 30px;
+}
  
 
