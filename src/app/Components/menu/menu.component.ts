@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+   optionList = [
+    { name: 'Rules',
+      clicked: false
+    },
+    { name: 'LeaderBoard',
+      clicked: false
+    },    
+    { name: 'Settings',
+      clicked: false
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
