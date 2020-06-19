@@ -40,6 +40,7 @@ export class LeaderboardComponent implements OnInit {
   dataSource = SCORER_DATA;
 
 
+
   constructor() { }
 
   ngOnInit(): void {

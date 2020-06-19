@@ -26,6 +26,7 @@ const appRoutes: Routes = [
     LeaderboardComponent,
     MenuComponent,
   ],
+  entryComponents: [RegistrationComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
