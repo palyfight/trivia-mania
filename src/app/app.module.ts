@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
@@ -11,6 +10,7 @@ import { MenuComponent } from './Components/menu/menu.component'
 import {RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './Material/material.module';
+import { UsersService } from './users.service';
 
 const appRoutes: Routes = [
   {path: '', component : HomePageComponent},
@@ -34,7 +34,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
