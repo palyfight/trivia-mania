@@ -7,9 +7,10 @@ import { HomePageComponent } from './Components/home-page/home-page.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegistrationComponent } from './Components/registration/registration.component';
 import { LeaderboardComponent } from './Components/leaderboard/leaderboard.component';
-import { MenuComponent } from './Components/menu/menu.component'
+import { MenuComponent } from './Components/menu/menu.component';
 import {RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './Components/nav/nav.component';
 import { MaterialModule } from './Material/material.module';
 
 const appRoutes: Routes = [
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
     RegistrationComponent,
     LeaderboardComponent,
     MenuComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
