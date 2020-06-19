@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @Input() optionContent: boolean; 
+
    optionList = [
     { name: 'Rules',
       clicked: false
     },
-    { name: 'LeaderBoard',
+    { name: 'Leaderboard',
       clicked: false
     },    
     { name: 'Settings',

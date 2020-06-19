@@ -15,7 +15,7 @@ import { MaterialModule } from './Material/material.module';
 const appRoutes: Routes = [
   {path: 
     '**',
-    component : HomePageComponent
+    component : LeaderboardComponent
    }
 ]
 

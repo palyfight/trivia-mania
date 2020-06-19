@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
 
 
 const materialComponents = [
@@ -15,6 +16,7 @@ const materialComponents = [
   MatMenuModule,
   MatGridListModule,
   MatIconModule,
+  MatTableModule,
   MatTabsModule
 ]
 
