@@ -13,14 +13,10 @@ export class HomePageComponent implements OnInit {
 
   title = 'Trivia Mania';
   background = 'TriviaMania/bg-img2.jpg';
-  isOptionShown = false;  
+ 
 
   constructor() { 
     
-  }
-
-  showOptionContent() {
-    this.isOptionShown = !this.isOptionShown;
   }
 
   ngOnInit(): void {

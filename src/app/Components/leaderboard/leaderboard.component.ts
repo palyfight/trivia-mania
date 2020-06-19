@@ -36,8 +36,6 @@ export interface BestScorers {
 })
 export class LeaderboardComponent implements OnInit {
 
-  @Input() isShown: boolean; 
-  
   lbColumns: string[] = ['rank', 'username', 'category', 'score', 'date'];
   dataSource = SCORER_DATA;
 

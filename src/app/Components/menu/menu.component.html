@@ -1,7 +1,8 @@
-<mat-tab-group>
+<mat-tab-group #tabRef (selectedTabChange)="optionChange(tabRef.selectedIndex)">
     <mat-tab *ngFor="let option of optionList">
       <ng-template mat-tab-label>
-        {{ option.name }}
+        <a [routerLink]="optionComponent">{{ option.name }}</a>
       </ng-template>
     </mat-tab>
 </mat-tab-group>
+

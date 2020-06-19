@@ -13,10 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './Material/material.module';
 
 const appRoutes: Routes = [
-  {path: 
-    '**',
-    component : LeaderboardComponent
-   }
+  {path: '', component : HomePageComponent},
+  {path: 'leaderboard-page', component : LeaderboardComponent}
 ]
 
 @NgModule({
