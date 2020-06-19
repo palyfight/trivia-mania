@@ -7,8 +7,15 @@ mat-grid-tile {
     background-color: lightblue;
 }
 
-mat-toolbar {
-    justify-content: end;
+.img-logo {
+    height: 100%;
+    width: 35%;
+}
+
+mat-toolbar { background-color: white;}
+
+mat-toolbar div:last-child {
+    margin-left: auto;
 }
 
 mat-toolbar a {
@@ -18,8 +25,8 @@ mat-toolbar a {
 
 .play-btn {
     color:black;
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 40%;
 }
 
 .menu {

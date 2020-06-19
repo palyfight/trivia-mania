@@ -3,13 +3,13 @@
 <!--Espace du haut : header + navbar -->
   <mat-grid-tile colspan="3">
     <mat-toolbar>
-      <span>
-        <ng-template mat-tab-label>
-          <img src="src\assets\img\TriviaManiaLogo.jpg" alt="logo de Trivia Mania">
-        </ng-template>
+      <span>   
+          <a><img class="img-logo" src="assets\img\trivia-mania-logo.PNG" alt="logo de Trivia Mania"/></a>
       </span>
+      <div class="btn-sign">
       <span><a mat-raised-button color="primary" (click)="openDialogLogIn()">Log In</a></span>
       <span><a mat-raised-button color="primary" (click)="openDialogRegister()">Register</a></span>
+    </div>
     </mat-toolbar>
   </mat-grid-tile>
 <!--Espace milieu-gauche: ... -->
@@ -18,7 +18,7 @@
   </mat-grid-tile>
 <!--Espace milieu-droit1 : Bouton play-->
   <mat-grid-tile colspan="2" rowspan="2">
-    <button class="play-btn" mat-fab color="accent" fullWidth="true">PLAY GAME</button>
+    <button class="play-btn" mat-fab color="accent" fullWidth="true"><em>PLAY GAME</em></button>
   </mat-grid-tile>
 <!--Espace milieu-droit2 : menu -->
   <mat-grid-tile colspan="2">
