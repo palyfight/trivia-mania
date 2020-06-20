@@ -7,9 +7,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 const materialComponents = [
+  MatInputModule,
   MatDialogModule,
   MatToolbarModule,
   MatButtonModule,
@@ -17,8 +19,9 @@ const materialComponents = [
   MatGridListModule,
   MatIconModule,
   MatTableModule,
-  MatTabsModule
-]
+  MatTabsModule,
+  MatSlideToggleModule
+];
 
 @NgModule({
   imports: [materialComponents],
