@@ -1,7 +1,14 @@
+
 .login {
     display: flex;
     padding: 15px;
     justify-content: flex-end;
+    background-color: lightgrey;
+
+
+    button {
+        margin-left: 10px
+    }
 }
 
 .img-logo {

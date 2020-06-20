@@ -8,33 +8,33 @@ export interface BestScorers {
   date: string;
 }
 
-  const LEADERBOARD_DATA: BestScorers[] = [
+const LEADERBOARD_DATA: BestScorers[] = [
     { rank: 1,
-      username: 'michelicious', 
+      username: 'michelicious',
       score: 280,
       category: 'General',
       date: '2020-06-20'
     },
     { rank: 2,
-      username: 'Dankest', 
+      username: 'Dankest',
       score: 270,
       category: 'General',
       date: '2020-06-20'
     },
     { rank: 3,
-      username: 'palyfight', 
+      username: 'palyfight',
       score: 260,
       category: 'General',
       date: '2020-06-20'
     },
-  ]
+];
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-  leaderboardData = LEADERBOARD_DATA; 
+  leaderboardData = LEADERBOARD_DATA;
 
   constructor() { }
 
