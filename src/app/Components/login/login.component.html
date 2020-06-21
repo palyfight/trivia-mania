@@ -1,4 +1,4 @@
-<form class="example-form">
+<form class="login" *ngIf="loginState == 0">
     <img class="img-logo" src="assets\img\trivia-mania-logo.PNG" alt="logo de Trivia Mania"/>
     <mat-form-field class="full-width">
         <mat-label>Username</mat-label>
@@ -14,7 +14,23 @@
         Remember me!
     </mat-slide-toggle>
 
+    <div class="links">
+        <a [routerLink]="" (click)="openDialogRegistration()" class="full-width">I don't have account</a>
+        <a [routerLink]="" (click)="openDialogForget()" class="full-width">Forgot my password</a>
+    </div>
+
     <div class="full-width flex login-btn">
         <button mat-raised-button color="primary">Login</button>
+    </div>
+</form>
+<app-registration *ngIf="loginState == 1"></app-registration>
+<form class="login" *ngIf="loginState == 2">
+    <img class="img-logo" src="assets\img\trivia-mania-logo.PNG" alt="logo de Trivia Mania"/>
+    <mat-form-field class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <div class="full-width flex login-btn">
+        <button mat-raised-button color="primary">Submit</button>
     </div>
 </form>
