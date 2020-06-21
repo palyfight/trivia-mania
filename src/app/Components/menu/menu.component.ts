@@ -1,53 +1,47 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {ThemePalette} from '@angular/material/core'
+
+
+export interface Option {
+  name: string;
+  position: number;
+  route: string;
+}
+
+const optionChoices: Option[] = [
+  { name: 'Rules',
+    position: 0,
+    route: '/rules-page'
+  },
+  { name: 'Leaderboard',
+    position: 1, 
+    route: '/leaderboard-page'},
+  { name: 'Settings',
+    position: 2,
+    route: '/settings-page'}
+]
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
+
 export class MenuComponent implements OnInit {
-  optionComponent: string; 
+  optionList = optionChoices;
+  @Input() menuOption: Option; 
+  activeLink = this.optionList[0];
+  background: ThemePalette = 'primary';
 
-   optionList = [
-    { name: 'Rules',
-      index: 0,
-      clicked: false,
-      component: ""
-    },
-    { name: 'Leaderboard',
-      index: 1,
-      clicked: false,
-      component: "/leaderboard-page"
-    },    
-    { name: 'Settings',
-      index: 2,
-      clicked: false,
-      component: ""
-    }
-  ]
-
-  logTest(x) { console.log(x)}
-
-  optionChange(index){
-    switch(index) {
-      case 0:
-        this.optionComponent = this.optionList[0].component;
-        console.log(this.optionList[0].component)
-        break;
-      case 1:
-        this.optionComponent = this.optionList[1].component;
-        console.log(this.optionList[1].component)
-        break;
-      case 2:
-        this.optionComponent = this.optionList[2].component;
-        console.log(this.optionList[2].component)
-    }
-}
   constructor() {
-    this.optionComponent = "";
-   }
+  }
 
   ngOnInit(): void {
   }
 
+  toggleBackground() {
+    this.background = this.background ? undefined : 'primary';
+  }
+
 }
+  

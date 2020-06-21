@@ -31,4 +31,15 @@ mat-toolbar div:last-child {
     height: 30px;
 }
  
+.mouse-over{
+    transition: 0.4s all;
+  }
 
+.mouse-over:hover {
+    h2 { 
+        color: #fff;
+        background-color:  #e38d13;
+        cursor: pointer;
+        text-decoration: none;
+        }
+}
