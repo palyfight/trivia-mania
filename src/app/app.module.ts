@@ -5,17 +5,22 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegistrationComponent } from './Components/registration/registration.component';
-import { LeaderboardComponent } from './Components/leaderboard/leaderboard.component';
+import { LeaderboardPageComponent } from './Components/leaderboard-page/leaderboard-page.component';
+import { SettingsPageComponent } from './Components/settings-page/settings-page.component';
+import { RulesPageComponent } from './Components/rules-page/rules-page.component';
 import { MenuComponent } from './Components/menu/menu.component';
 import {RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './Components/nav/nav.component';
 import { MaterialModule } from './Material/material.module';
-import { UsersService } from './users.service';
+import { UsersService } from './Services/users.service';
+import { QuestionsService } from './Services/questions.service';
 
 const appRoutes: Routes = [
   {path: '', component : HomePageComponent},
-  {path: 'leaderboard-page', component : LeaderboardComponent}
+  {path: 'rules-page', component : RulesPageComponent},
+  {path: 'leaderboard-page', component : LeaderboardPageComponent},
+  {path: 'settings-page', component : SettingsPageComponent}
 ]
 
 @NgModule({
@@ -24,9 +29,12 @@ const appRoutes: Routes = [
     HomePageComponent,
     LoginComponent,
     RegistrationComponent,
-    LeaderboardComponent,
+    LeaderboardPageComponent,
+    SettingsPageComponent,
+    RulesPageComponent,
     MenuComponent,
     NavComponent,
+    
   ],
   entryComponents: [RegistrationComponent, LoginComponent],
   imports: [
@@ -36,7 +44,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [UsersService],
+  providers: [UsersService, QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

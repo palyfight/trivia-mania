@@ -1,8 +1,3 @@
-:host {
-    height: 100%; 
-    width: 100%; 
-}
-
 mat-grid-tile {
     background-color: lightblue;
 }
@@ -19,8 +14,9 @@ mat-toolbar div:last-child {
     width: 40%;
 }
 
-.menu {
-    color: white; 
+.play-btn:hover{
+    height: 80%;
+    width: 50%;
 }
 
 .bot-tile {
@@ -37,9 +33,9 @@ mat-toolbar div:last-child {
 
 .mouse-over:hover {
     h2 { 
-        color: #fff;
-        background-color:  #e38d13;
         cursor: pointer;
         text-decoration: none;
+        font-size: 3rem;
+        text-emphasis: em;
         }
 }
