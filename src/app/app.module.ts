@@ -15,12 +15,14 @@ import { NavComponent } from './Components/nav/nav.component';
 import { MaterialModule } from './Material/material.module';
 import { UsersService } from './Services/users.service';
 import { QuestionsService } from './Services/questions.service';
+import { GameStartPageComponent } from './Components/game-start-page/game-start-page.component';
 
 const appRoutes: Routes = [
   {path: '', component : HomePageComponent},
   {path: 'rules-page', component : RulesPageComponent},
   {path: 'leaderboard-page', component : LeaderboardPageComponent},
-  {path: 'settings-page', component : SettingsPageComponent}
+  {path: 'settings-page', component : SettingsPageComponent},
+  {path: 'game-start-page', component : GameStartPageComponent}
 ]
 
 @NgModule({
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
     RulesPageComponent,
     MenuComponent,
     NavComponent,
+    GameStartPageComponent,
     
   ],
   entryComponents: [RegistrationComponent, LoginComponent],
