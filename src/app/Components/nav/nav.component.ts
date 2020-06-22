@@ -10,7 +10,7 @@ import { RegistrationComponent } from '../registration/registration.component';
 })
 export class NavComponent {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {}
 
   openDialogLogIn() {
     const dialogRef = this.dialog.open(LoginComponent);
