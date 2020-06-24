@@ -16,6 +16,7 @@ import { MaterialModule } from './Material/material.module';
 import { UsersService } from './Services/users.service';
 import { QuestionsService } from './Services/questions.service';
 import { GameStartPageComponent } from './Components/game-start-page/game-start-page.component';
+import { SearchUserComponent } from './Components/search-user/search-user.component';
 
 const appRoutes: Routes = [
   {path: '', component : HomePageComponent},
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     MenuComponent,
     NavComponent,
     GameStartPageComponent,
+    SearchUserComponent,
     
   ],
   entryComponents: [RegistrationComponent, LoginComponent],

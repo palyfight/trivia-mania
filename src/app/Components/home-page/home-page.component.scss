@@ -2,22 +2,22 @@ mat-grid-tile {
     background-color: lightblue;
 }
 
-mat-toolbar { background-color: white;}
-
-mat-toolbar div:last-child {
-    margin-left: auto;
+app-search-user {
+    height: 50%;
+    width: 50%;
 }
 
 .play-btn {
     color:black;
     height: 70%;
     width: 40%;
-    padding-top: 80px;
+    padding-top: 8%;
 }
 
 .play-btn:hover{
     height: 80%;
     width: 50%;
+    padding-bottom: 2%;
 }
 
 .bot-tile {
@@ -49,3 +49,5 @@ mat-toolbar div:last-child {
   .active-pink .fa, .active-pink-2 .fa {
     color: #f48fb1;
   }
+
+  
