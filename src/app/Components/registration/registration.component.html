@@ -1,1 +1,42 @@
-<p>registration works!</p>
+<form class="register" *ngIf="loginState == 1">
+    <img class="img-logo" src="assets\img\trivia-mania-logo.PNG" alt="logo de Trivia Mania"/>
+    <mat-form-field class="full-width" formControlName="username" required>
+        <mat-label>Username</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" formControlName="email" required>
+        <mat-label>Email</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" formControlName="password" required>
+        <mat-label>Password</mat-label>
+        <input type="password" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" formControlName="confirmPassword" required>
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" matInput>
+    </mat-form-field>
+
+    <div class="links">
+        <a [routerLink]="" (click)="openDialogLogin()" class="full-width">I already have account</a>
+    </div>
+
+    <div class="full-width flex register-btn">
+        <button mat-raised-button color="primary">Register</button>
+    </div>
+</form>
+
+<app-login *ngIf="loginState == 0"></app-login>
+<form class="login" *ngIf="loginState == 2">
+    <img class="img-logo" src="assets\img\trivia-mania-logo.PNG" alt="logo de Trivia Mania"/>
+    <mat-form-field class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <div class="full-width flex login-btn">
+        <button mat-raised-button color="primary">Submit</button>
+    </div>
+</form>
