@@ -1,53 +1,28 @@
-mat-grid-tile {
+mat-grid-list {
     background-color: lightblue;
-}
-
-app-search-user {
-    height: 50%;
-    width: 50%;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 !important; 
 }
 
 .play-btn {
     color:black;
     height: 70%;
     width: 40%;
-    padding-top: 8%;
 }
 
 .play-btn:hover{
     height: 80%;
     width: 50%;
-    padding-bottom: 2%;
+
+    h2{
+        font-size: 50px;
+    }
 }
 
-.bot-tile {
-    height: 30px;
+h2 {
+    font-size: 35px; 
 }
 
-.footer {
-    height: 30px;
-}
- 
-.mouse-over{
-    transition: 0.4s all;
-  }
-
-.mouse-over:hover {
-    h2 { 
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 3rem;
-        text-emphasis: em;
-        }
-}
-
-.active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-  }
-
-  .active-pink .fa, .active-pink-2 .fa {
-    color: #f48fb1;
-  }
 
   

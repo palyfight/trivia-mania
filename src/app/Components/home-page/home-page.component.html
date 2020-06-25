@@ -1,20 +1,13 @@
-<mat-grid-list cols="3" rowHeight="3:1" gutterSize="0px">
-<!--Espace milieu-gauche: menu -->
-  <mat-grid-tile rowspan="3">
-    <!-- Search form -->
-      <app-search-user></app-search-user>
+<mat-grid-list cols="4" rowHeight="2:1" gutterSize="0px">
+<!--Espace milieu1 : Bouton play-->
+  <mat-grid-tile colspan="4" rowspan="2">
+    <button [routerLink]="'/game-start-page'" class="play-btn" mat-fab color="accent" fullWidth="true">
+      <h2>PLAY GAME</h2>
+    </button>
   </mat-grid-tile>
-<!--Espace milieu-droit1 : Bouton play-->
-  <mat-grid-tile colspan="2" rowspan="2">
-    <a routerLink="/game-start-page" class="play-btn mouse-over" mat-fab color="accent" fullWidth="true"><h2>PLAY GAME</h2></a>
-  </mat-grid-tile>
-<!--Espace milieu-droit2 : menu -->
-  <mat-grid-tile colspan="2">
+<!--Espace milieu2 : menu -->
+  <mat-grid-tile colspan="4" rowspan="1">
     <app-menu></app-menu>
-  </mat-grid-tile>
-<!--Espace footer -->
-  <mat-grid-tile class="bot-tile" colspan="3">
-    <mat-grid-tile-footer class="footer"></mat-grid-tile-footer>
   </mat-grid-tile>
 </mat-grid-list>
 
