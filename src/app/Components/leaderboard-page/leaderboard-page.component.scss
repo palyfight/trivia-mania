@@ -1,3 +1,14 @@
+:host {
+  display: grid;
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  position: absolute;
+}
+
 table {
-  width: 100%;
+  width: 70%;
 }

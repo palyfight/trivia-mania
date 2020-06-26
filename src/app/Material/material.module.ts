@@ -9,6 +9,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 const materialComponents = [
   MatInputModule,
@@ -20,7 +22,8 @@ const materialComponents = [
   MatIconModule,
   MatTableModule,
   MatTabsModule,
-  MatSlideToggleModule
+  MatSlideToggleModule,
+  MatSidenavModule
 ];
 
 @NgModule({
