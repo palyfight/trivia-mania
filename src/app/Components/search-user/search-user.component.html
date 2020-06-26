@@ -1,4 +1,17 @@
-<mat-form-field class="example-form-field">
-    <mat-label>Clearable input</mat-label>
-    <input matInput type="text">
-  </mat-form-field>
+<div class="div-search-user">
+    <h3>Search user</h3>
+    <form [formGroup]="searchForm">
+
+        <mat-form-field class="search-form-field">
+            <mat-label>username</mat-label>
+            <input matInput type="text" [(ngModel)]="value" formControlName="username">
+            <button mat-button *ngIf="value" 
+            matSuffix mat-icon-button aria-label="Clear" 
+            (click)="value=''">
+            <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <br><br>Value: {{ searchForm.value | json }}
+    </form>    
+</div> 

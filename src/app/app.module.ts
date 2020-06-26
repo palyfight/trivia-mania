@@ -17,6 +17,7 @@ import { UsersService } from './Services/users.service';
 import { QuestionsService } from './Services/questions.service';
 import { GameStartPageComponent } from './Components/game-start-page/game-start-page.component';
 import { SearchUserComponent } from './Components/search-user/search-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: '', component : HomePageComponent},
@@ -39,7 +40,6 @@ const appRoutes: Routes = [
     NavComponent,
     GameStartPageComponent,
     SearchUserComponent,
-    
   ],
   entryComponents: [RegistrationComponent, LoginComponent],
   imports: [
@@ -47,7 +47,9 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [UsersService, QuestionsService],
   bootstrap: [AppComponent]
